@@ -6,6 +6,7 @@
     "version": "1.0.0",
     "minimum-stability": "dev",
     "require": {
+        "php": "^8.2",
         "raid/core-command": "dev-main",
         "raid/core-action": "dev-main",
         "raid/core-request": "dev-main",

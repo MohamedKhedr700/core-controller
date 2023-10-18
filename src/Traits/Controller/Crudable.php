@@ -1,6 +1,6 @@
 <?php
 
-namespace Raid\Core\Modules\Traits\Controller;
+namespace Raid\Core\Controller\Traits\Controller;
 
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;

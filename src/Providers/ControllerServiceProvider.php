@@ -1,9 +1,9 @@
 <?php
 
-namespace Raid\Core\Modules\Providers;
+namespace Raid\Core\Controller\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Raid\Core\Modules\Traits\Provider\WithControllerProvider;
+use Raid\Core\Controller\Traits\Provider\WithControllerProvider;
 
 class ControllerServiceProvider extends ServiceProvider
 {

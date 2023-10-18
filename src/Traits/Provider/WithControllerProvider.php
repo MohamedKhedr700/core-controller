@@ -1,6 +1,6 @@
 <?php
 
-namespace Raid\Core\Modules\Traits\Provider;
+namespace Raid\Core\Controller\Traits\Provider;
 
 trait WithControllerProvider
 {

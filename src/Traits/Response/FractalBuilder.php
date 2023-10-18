@@ -1,6 +1,6 @@
 <?php
 
-namespace Raid\Core\Modules\Traits\Response;
+namespace Raid\Core\Controller\Traits\Response;
 
 use Illuminate\Pagination\AbstractPaginator;
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;

@@ -6,7 +6,11 @@
     "version": "1.0.0",
     "minimum-stability": "dev",
     "require": {
-        "raid/core-command": "dev-main"
+        "raid/core-command": "dev-main",
+        "raid/core-action": "dev-main",
+        "raid/core-request": "dev-main",
+        "raid/core-repository": "dev-main",
+        "raid/core-model": "dev-main"
     },
     "autoload": {
         "psr-4": {

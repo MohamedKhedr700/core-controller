@@ -1,0 +1,29 @@
+{
+    "name": "raid/core-controller",
+    "description": "Raid Core Controller",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "require": {
+        "raid/core-command": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Raid\\Core\\Controller\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Raid\\Core\\Controller\\Providers\\ControllerServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamedkhedr700",
+            "email": "mohamedkhedr700@gmail.com"
+        }
+    ]
+}

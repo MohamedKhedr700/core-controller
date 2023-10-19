@@ -10,7 +10,7 @@ use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-trait WithCatchException
+trait WithCatchableException
 {
     /**
      * Render an exception into an HTTP response.

@@ -2,6 +2,8 @@
 
 namespace Raid\Core\Controller\Traits\Controller;
 
+use Raid\Core\Repository\Repositories\Contracts\RepositoryInterface;
+
 trait WithRepository
 {
     /**
@@ -20,7 +22,7 @@ trait WithRepository
     /**
      * Get repository instance.
      */
-    public function getRepository(): string
+    public function getRepository(): RepositoryInterface
     {
         return new (static::repository());
     }

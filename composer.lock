@@ -1690,12 +1690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MohamedKhedr700/core-action.git",
-                "reference": "2db2b3455a6071731fcddb5f59a8aca4d7f306a1"
+                "reference": "76e6ed2fafb0608180d071d7fd52bf152fda960e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MohamedKhedr700/core-action/zipball/2db2b3455a6071731fcddb5f59a8aca4d7f306a1",
-                "reference": "2db2b3455a6071731fcddb5f59a8aca4d7f306a1",
+                "url": "https://api.github.com/repos/MohamedKhedr700/core-action/zipball/76e6ed2fafb0608180d071d7fd52bf152fda960e",
+                "reference": "76e6ed2fafb0608180d071d7fd52bf152fda960e",
                 "shasum": ""
             },
             "require": {
@@ -1742,7 +1742,7 @@
                 "issues": "https://github.com/MohamedKhedr700/core-action/issues",
                 "source": "https://github.com/MohamedKhedr700/core-action/tree/main"
             },
-            "time": "2023-10-18T23:37:21+00:00"
+            "time": "2023-10-20T16:38:54+00:00"
         },
         {
             "name": "raid/core-auth",
@@ -2101,12 +2101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MohamedKhedr700/core-repository.git",
-                "reference": "921648cb733a2cad82dd284206007d277078a0b5"
+                "reference": "f37113c641390e8ff9794426fe6bacd4059590b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MohamedKhedr700/core-repository/zipball/921648cb733a2cad82dd284206007d277078a0b5",
-                "reference": "921648cb733a2cad82dd284206007d277078a0b5",
+                "url": "https://api.github.com/repos/MohamedKhedr700/core-repository/zipball/f37113c641390e8ff9794426fe6bacd4059590b2",
+                "reference": "f37113c641390e8ff9794426fe6bacd4059590b2",
                 "shasum": ""
             },
             "require": {
@@ -2118,8 +2118,7 @@
                 "raid/core-command": "dev-main",
                 "raid/core-event": "dev-main",
                 "raid/core-gate": "dev-main",
-                "raid/core-model": "dev-main",
-                "spatie/laravel-fractal": "^6.0"
+                "raid/core-model": "dev-main"
             },
             "default-branch": true,
             "type": "library",
@@ -2150,7 +2149,7 @@
                 "issues": "https://github.com/MohamedKhedr700/core-repository/issues",
                 "source": "https://github.com/MohamedKhedr700/core-repository/tree/main"
             },
-            "time": "2023-10-20T00:50:46+00:00"
+            "time": "2023-10-20T11:53:47+00:00"
         },
         {
             "name": "raid/core-request",
@@ -3294,12 +3293,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "dfebe704ce8a9837400aefd613a3128319f00ea0"
+                "reference": "1df3b64ada88d18efb1c662a476c8f3a648710d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/dfebe704ce8a9837400aefd613a3128319f00ea0",
-                "reference": "dfebe704ce8a9837400aefd613a3128319f00ea0",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/1df3b64ada88d18efb1c662a476c8f3a648710d5",
+                "reference": "1df3b64ada88d18efb1c662a476c8f3a648710d5",
                 "shasum": ""
             },
             "require": {
@@ -3381,7 +3380,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-20T05:44:23+00:00"
+            "time": "2023-10-20T12:00:10+00:00"
         },
         {
             "name": "symfony/translation-contracts",

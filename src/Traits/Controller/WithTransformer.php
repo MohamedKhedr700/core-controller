@@ -2,6 +2,8 @@
 
 namespace Raid\Core\Controller\Traits\Controller;
 
+use Raid\Core\Controller\Transformers\Contracts\TransformerInterface;
+
 trait WithTransformer
 {
     /**
@@ -20,7 +22,7 @@ trait WithTransformer
     /**
      * Get Transformer instance.
      */
-    public function getTransformer(): string
+    public function getTransformer(): TransformerInterface
     {
         return new (static::transformer());
     }

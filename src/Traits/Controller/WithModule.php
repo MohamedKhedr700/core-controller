@@ -2,14 +2,14 @@
 
 namespace Raid\Core\Controller\Traits\Controller;
 
-trait WithMessage
+trait WithModule
 {
     /**
      * Get module name.
      */
     public static function getModule()
     {
-        return static::repository()::getModule();
+        return static::repository()::utility()::moduleLower();
     }
 
     /**
@@ -20,15 +20,5 @@ trait WithMessage
         $module = static::getModule();
 
         return trans("{$module}::{$module}.{$module}");
-    }
-
-    /**
-     * Get a response message.
-     */
-    protected function getResponseMessage(string $action, string $status = 'success'): string
-    {
-        return trans("messages.$action.$status", [
-            'module' => $this->getLocalizedModule(),
-        ]);
     }
 }

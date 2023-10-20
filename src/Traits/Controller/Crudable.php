@@ -29,9 +29,7 @@ trait Crudable
 
         $createAction->execute($data);
 
-        $message = $this->getResponseMessage($createAction->action());
-
-        return $this->success($message);
+        return $this->success($this->getResponseMessage($createAction->action()));
     }
 
     /**
@@ -49,9 +47,7 @@ trait Crudable
 
         $resources = $listAction->execute($filters, ['*'], $paginate);
 
-        $transformedResources = $this->fractalCollection($resources, new (static::transformer()));
-
-        return $this->success('', $transformedResources);
+        return $this->success('', $this->getTransformedResources($resources));
     }
 
     /**
@@ -65,9 +61,7 @@ trait Crudable
 
         $resource = $findAction->execute($id);
 
-        $transformedResource = $this->fractalItem($resource, new (static::transformer()));
-
-        return $this->success('', $transformedResource);
+        return $this->success('', $this->getTransformedResource($resource));
     }
 
     /**
@@ -83,9 +77,7 @@ trait Crudable
 
         $updateAction->execute($id, $data);
 
-        $message = $this->getResponseMessage($updateAction->action());
-
-        return $this->success($message);
+        return $this->success($this->getResponseMessage($updateAction->action()));
     }
 
     /**
@@ -101,9 +93,7 @@ trait Crudable
 
         $patchAction->execute($id, $data);
 
-        $message = $this->getResponseMessage($patchAction->action());
-
-        return $this->success($message);
+        return $this->success($this->getResponseMessage($patchAction->action()));
     }
 
     /**
@@ -117,8 +107,6 @@ trait Crudable
 
         $deleteAction->execute($id);
 
-        $message = $this->getResponseMessage($deleteAction->action());
-
-        return $this->success($message);
+        return $this->success($this->getResponseMessage($deleteAction->action()));
     }
 }

@@ -16,4 +16,12 @@ trait WithTransformer
     {
         return static::TRANSFORMER;
     }
+
+    /**
+     * Get Transformer instance.
+     */
+    public function getTransformer(): string
+    {
+        return new (static::transformer());
+    }
 }

@@ -16,4 +16,12 @@ trait WithRepository
     {
         return static::REPOSITORY;
     }
+
+    /**
+     * Get repository instance.
+     */
+    public function getRepository(): string
+    {
+        return new (static::repository());
+    }
 }

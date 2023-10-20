@@ -7,10 +7,10 @@ trait WithResponse
     /**
      * Get a transformed resource.
      */
-    protected function getTransformedResource(mixed $resource): array
+    protected function getTransformedResource(mixed $resource): ?array
     {
         if (is_null($resource)) {
-            return [];
+            return null;
         }
 
         return $this->fractalItem($resource, new (static::transformer()));
@@ -19,10 +19,10 @@ trait WithResponse
     /**
      * Get a transformed collection.
      */
-    protected function getTransformedResources(mixed $resources): array
+    protected function getTransformedResources(mixed $resources): ?array
     {
         if (is_null($resources)) {
-            return [];
+            return null;
         }
 
         return $this->fractalCollection($resources, new (static::transformer()));

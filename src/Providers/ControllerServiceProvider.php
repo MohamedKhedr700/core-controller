@@ -3,6 +3,8 @@
 namespace Raid\Core\Controller\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Raid\Core\Controller\Commands\CreateControllerCommand;
+use Raid\Core\Controller\Commands\CreateTransformerCommand;
 use Raid\Core\Controller\Traits\Provider\WithControllerProvider;
 
 class ControllerServiceProvider extends ServiceProvider
@@ -12,7 +14,10 @@ class ControllerServiceProvider extends ServiceProvider
     /**
      * The commands to be registered.
      */
-    protected array $commands = [];
+    protected array $commands = [
+        CreateControllerCommand::class,
+        CreateTransformerCommand::class,
+    ];
 
     /**
      * Register any application services.

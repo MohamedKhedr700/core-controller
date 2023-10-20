@@ -1,0 +1,16 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Raid\Core\Controller\Transformers\Transformer;
+
+class $CLASS_NAME$ extends Transformer
+{
+    /**
+     * Transform the resource into an array.
+     */
+    public function transform(): array
+    {
+        return [];
+    }
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Raid\Core\Controller\Controllers\Controller;
+
+class $CLASS_NAME$ extends Controller
+{
+    /**
+     * {@inheritdoc}
+     */
+    public const REPOSITORY = '';
+
+    /**
+     * {@inheritdoc}
+     */
+    public const TRANSFORMER = '';
+}

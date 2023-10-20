@@ -3,7 +3,7 @@
 namespace Raid\Core\Controller\Transformers;
 
 use League\Fractal\TransformerAbstract;
-use Raid\Core\Repository\Transformers\Contracts\TransformerInterface;
+use Raid\Core\Controller\Transformers\Contracts\TransformerInterface;
 
 abstract class Transformer extends TransformerAbstract implements TransformerInterface
 {

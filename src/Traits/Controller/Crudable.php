@@ -49,7 +49,7 @@ trait Crudable
 
         $resources = $listAction->execute($filters, ['*'], $paginate);
 
-        $transformedResources = $this->fractalCollection($resources, $this->getTransformer());
+        $transformedResources = $this->fractalCollection($resources, new (static::transformer()));
 
         return $this->success('', $transformedResources);
     }
@@ -65,7 +65,7 @@ trait Crudable
 
         $resource = $findAction->execute($id);
 
-        $transformedResource = $this->fractalItem($resource, $this->getTransformer());
+        $transformedResource = $this->fractalItem($resource, new (static::transformer()));
 
         return $this->success('', $transformedResource);
     }

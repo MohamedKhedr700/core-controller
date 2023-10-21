@@ -2,7 +2,7 @@
 
 namespace Raid\Core\Controller\Traits\Controller;
 
-use Raid\Core\Controller\Transformers\Contracts\TransformerInterface;
+use League\Fractal\TransformerAbstract;
 
 trait WithTransformer
 {
@@ -20,10 +20,20 @@ trait WithTransformer
     }
 
     /**
+     * Get repository transformer instance.
+     */
+    public static function getRepositoryTransformer(): string
+    {
+        return static::repository()::getTransformer();
+    }
+
+    /**
      * Get Transformer instance.
      */
-    public function getTransformer(): TransformerInterface
+    public function getTransformer(): TransformerAbstract
     {
-        return new (static::transformer());
+        $transformer = static::transformer() ?: static::getRepositoryTransformer();
+
+        return new $transformer;
     }
 }

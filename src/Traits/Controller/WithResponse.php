@@ -13,7 +13,7 @@ trait WithResponse
             return null;
         }
 
-        return $this->fractalItem($resource, new (static::transformer()));
+        return $this->fractalItem($resource, $this->getTransformer());
     }
 
     /**
@@ -25,7 +25,7 @@ trait WithResponse
             return null;
         }
 
-        return $this->fractalCollection($resources, new (static::transformer()));
+        return $this->fractalCollection($resources, $this->getTransformer());
     }
 
     /**

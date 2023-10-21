@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3970b1de45d73b3b6bce536e40e39b4",
+    "content-hash": "0d700e3a8db927942fbbba470da9b2de",
     "packages": [
         {
             "name": "archtechx/enums",
@@ -1690,12 +1690,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MohamedKhedr700/core-action.git",
-                "reference": "76e6ed2fafb0608180d071d7fd52bf152fda960e"
+                "reference": "311895717dd84c4a7fe471d1ac3a01d9678c58d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MohamedKhedr700/core-action/zipball/76e6ed2fafb0608180d071d7fd52bf152fda960e",
-                "reference": "76e6ed2fafb0608180d071d7fd52bf152fda960e",
+                "url": "https://api.github.com/repos/MohamedKhedr700/core-action/zipball/311895717dd84c4a7fe471d1ac3a01d9678c58d8",
+                "reference": "311895717dd84c4a7fe471d1ac3a01d9678c58d8",
                 "shasum": ""
             },
             "require": {
@@ -1742,7 +1742,7 @@
                 "issues": "https://github.com/MohamedKhedr700/core-action/issues",
                 "source": "https://github.com/MohamedKhedr700/core-action/tree/main"
             },
-            "time": "2023-10-20T16:38:54+00:00"
+            "time": "2023-10-21T00:07:26+00:00"
         },
         {
             "name": "raid/core-auth",
@@ -1750,12 +1750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MohamedKhedr700/core-auth.git",
-                "reference": "9d31686f3f583a679bdb9876a7cfab6ad61469c5"
+                "reference": "30bdf93aac9e53ac2ae3a1635f7392ece1a85f70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MohamedKhedr700/core-auth/zipball/9d31686f3f583a679bdb9876a7cfab6ad61469c5",
-                "reference": "9d31686f3f583a679bdb9876a7cfab6ad61469c5",
+                "url": "https://api.github.com/repos/MohamedKhedr700/core-auth/zipball/30bdf93aac9e53ac2ae3a1635f7392ece1a85f70",
+                "reference": "30bdf93aac9e53ac2ae3a1635f7392ece1a85f70",
                 "shasum": ""
             },
             "require": {
@@ -1803,7 +1803,7 @@
                 "issues": "https://github.com/MohamedKhedr700/core-auth/issues",
                 "source": "https://github.com/MohamedKhedr700/core-auth/tree/main"
             },
-            "time": "2023-10-19T22:09:37+00:00"
+            "time": "2023-10-20T23:24:04+00:00"
         },
         {
             "name": "raid/core-command",
@@ -2101,12 +2101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MohamedKhedr700/core-repository.git",
-                "reference": "f37113c641390e8ff9794426fe6bacd4059590b2"
+                "reference": "79024069e57479400b6c6c5f7b7e7cb92577763f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MohamedKhedr700/core-repository/zipball/f37113c641390e8ff9794426fe6bacd4059590b2",
-                "reference": "f37113c641390e8ff9794426fe6bacd4059590b2",
+                "url": "https://api.github.com/repos/MohamedKhedr700/core-repository/zipball/79024069e57479400b6c6c5f7b7e7cb92577763f",
+                "reference": "79024069e57479400b6c6c5f7b7e7cb92577763f",
                 "shasum": ""
             },
             "require": {
@@ -2118,7 +2118,8 @@
                 "raid/core-command": "dev-main",
                 "raid/core-event": "dev-main",
                 "raid/core-gate": "dev-main",
-                "raid/core-model": "dev-main"
+                "raid/core-model": "dev-main",
+                "spatie/laravel-fractal": "^6.0"
             },
             "default-branch": true,
             "type": "library",
@@ -2149,7 +2150,7 @@
                 "issues": "https://github.com/MohamedKhedr700/core-repository/issues",
                 "source": "https://github.com/MohamedKhedr700/core-repository/tree/main"
             },
-            "time": "2023-10-20T11:53:47+00:00"
+            "time": "2023-10-21T00:19:47+00:00"
         },
         {
             "name": "raid/core-request",

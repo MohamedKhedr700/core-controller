@@ -11,8 +11,7 @@
         "raid/core-action": "dev-main",
         "raid/core-request": "dev-main",
         "raid/core-repository": "dev-main",
-        "raid/core-model": "dev-main",
-        "spatie/laravel-fractal": "^6.0"
+        "raid/core-model": "dev-main"
 
     },
     "autoload": {

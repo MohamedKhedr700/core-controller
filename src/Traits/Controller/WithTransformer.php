@@ -14,7 +14,7 @@ trait WithTransformer
     /**
      * Get Transformer class.
      */
-    public static function transformer(): string
+    public static function transformer(): ?string
     {
         return static::TRANSFORMER;
     }

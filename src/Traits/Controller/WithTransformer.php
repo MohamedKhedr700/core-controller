@@ -9,7 +9,7 @@ trait WithTransformer
     /**
      * Transformer class.
      */
-    public const TRANSFORMER = '';
+    public const TRANSFORMER = null;
 
     /**
      * Get Transformer class.

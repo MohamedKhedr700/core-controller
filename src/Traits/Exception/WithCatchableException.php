@@ -29,9 +29,8 @@ trait WithCatchableException
         return response()->json([
             'error' => true,
             'message' => $exceptionError['message'],
-            'code' => $exceptionError['code'],
             'trace' => $exceptionError['trace'] ?? [],
-        ], $exceptionError['code']);
+        ], $exceptionError['code'] ?? 500);
     }
 
     /**
@@ -67,12 +66,7 @@ trait WithCatchableException
 
                 break;
             default:
-                $code = $exception->getCode();
-
-                $code = $code === 0 ? 422 : $code;
-
                 $error['message'] = $exception->getMessage();
-                $error['code'] = $code;
                 $error['trace'] = $exception->getTrace();
         }
 

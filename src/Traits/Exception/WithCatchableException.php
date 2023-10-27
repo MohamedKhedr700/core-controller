@@ -66,8 +66,7 @@ trait WithCatchableException
 
                 break;
             default:
-                $error['message'] = $exception->getMessage();
-                $error['trace'] = $exception->getTrace();
+               $error = null;
         }
 
         return $error;

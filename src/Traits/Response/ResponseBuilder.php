@@ -240,14 +240,13 @@ trait ResponseBuilder
                 $key = 'error';
             }
 
-            if (! is_string($value)) {
-                $value = $value[0] ?? '';
+            if (! is_array($value)) {
+                $value = [$value];
             }
 
-            $errorResponseData[] = [
-                'key' => $key,
-                'value' => $value,
-            ];
+            $existingErrors = $errorResponseData[$key] ?? [];
+
+            $errorResponseData[$key] = array_merge($existingErrors, $value);
         }
 
         return $errorResponseData;

@@ -7,7 +7,7 @@ trait WithResponse
     /**
      * Get a transformed resource.
      */
-    protected function getTransformedResource(mixed $resource): ?array
+    protected function transformResource(mixed $resource): ?array
     {
         if (is_null($resource)) {
             return null;
@@ -19,7 +19,7 @@ trait WithResponse
     /**
      * Get a transformed collection.
      */
-    protected function getTransformedResources(mixed $resources): ?array
+    protected function transformResources(mixed $resources): ?array
     {
         if (is_null($resources)) {
             return null;

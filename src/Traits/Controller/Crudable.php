@@ -47,7 +47,7 @@ trait Crudable
 
         $resources = $listAction->execute($filters, ['*'], $paginate);
 
-        return $this->success('', $this->getTransformedResources($resources));
+        return $this->success('', $this->transformResources($resources));
     }
 
     /**
@@ -61,7 +61,7 @@ trait Crudable
 
         $resource = $findAction->execute($id);
 
-        return $this->success('', $this->getTransformedResource($resource));
+        return $this->success('', $this->transformResource($resource));
     }
 
     /**

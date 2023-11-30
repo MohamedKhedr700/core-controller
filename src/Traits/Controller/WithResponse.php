@@ -9,11 +9,7 @@ trait WithResponse
      */
     protected function transformResource(mixed $resource, array $includes = []): ?array
     {
-        if (is_null($resource)) {
-            return null;
-        }
-
-        return $this->fractalItem($resource, $this->getTransformer(), $includes);
+        return is_null($resource) ? null :$this->fractalItem($resource, $this->getTransformer(), $includes);
     }
 
     /**
@@ -21,11 +17,7 @@ trait WithResponse
      */
     protected function transformResources(mixed $resources, array $includes = []): ?array
     {
-        if (is_null($resources)) {
-            return null;
-        }
-
-        return $this->fractalCollection($resources, $this->getTransformer(), $includes);
+        return is_null($resources) ? null :$this->fractalCollection($resources, $this->getTransformer(), $includes);
     }
 
     /**

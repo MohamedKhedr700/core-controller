@@ -55,13 +55,13 @@ trait Crudable
      *
      * @throws AuthorizationException
      */
-    public function showResource(ModelInterface $id, FindActionInterface $findAction): JsonResponse
+    public function showResource(ModelInterface $id, FindActionInterface $findAction, array $includes = []): JsonResponse
     {
         $findAction->authorize($id);
 
         $resource = $findAction->execute($id);
 
-        return $this->success('', $this->transformResource($resource));
+        return $this->success('', $this->transformResource($resource, $includes));
     }
 
     /**

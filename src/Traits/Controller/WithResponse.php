@@ -7,13 +7,13 @@ trait WithResponse
     /**
      * Get a transformed resource.
      */
-    protected function transformResource(mixed $resource): ?array
+    protected function transformResource(mixed $resource, array $includes = []): ?array
     {
         if (is_null($resource)) {
             return null;
         }
 
-        return $this->fractalItem($resource, $this->getTransformer());
+        return $this->fractalItem($resource, $this->getTransformer(), $includes);
     }
 
     /**

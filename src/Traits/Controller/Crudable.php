@@ -37,7 +37,7 @@ trait Crudable
      *
      * @throws AuthorizationException|UnvalidatedRequestException
      */
-    public function listResources(Request $request, ListActionInterface $listAction): JsonResponse
+    public function listResources(Request $request, ListActionInterface $listAction, array $includes = []): JsonResponse
     {
         $listAction->authorize();
 
@@ -47,7 +47,7 @@ trait Crudable
 
         $resources = $listAction->execute($filters, ['*'], $paginate);
 
-        return $this->success('', $this->transformResources($resources));
+        return $this->success('', $this->transformResources($resources, $includes));
     }
 
     /**

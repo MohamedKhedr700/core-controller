@@ -19,13 +19,13 @@ trait WithResponse
     /**
      * Get a transformed collection.
      */
-    protected function transformResources(mixed $resources): ?array
+    protected function transformResources(mixed $resources, array $includes = []): ?array
     {
         if (is_null($resources)) {
             return null;
         }
 
-        return $this->fractalCollection($resources, $this->getTransformer());
+        return $this->fractalCollection($resources, $this->getTransformer(), $includes);
     }
 
     /**

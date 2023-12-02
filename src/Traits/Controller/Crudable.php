@@ -37,7 +37,7 @@ trait Crudable
      *
      * @throws AuthorizationException|UnvalidatedRequestException
      */
-    public function listResources(Request $request, ListActionInterface $listAction, array $includes = [], array $relations = []): JsonResponse
+    public function listResources(Request $request, ListActionInterface $listAction, array $includes = []): JsonResponse
     {
         $listAction->authorize();
 
@@ -55,7 +55,7 @@ trait Crudable
      *
      * @throws AuthorizationException
      */
-    public function showResource(ModelInterface $id, FindActionInterface $findAction, array $includes = [], array $relations = []): JsonResponse
+    public function showResource(ModelInterface $id, FindActionInterface $findAction, array $includes = []): JsonResponse
     {
         $findAction->authorize($id);
 

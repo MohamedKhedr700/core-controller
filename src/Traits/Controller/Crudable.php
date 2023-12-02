@@ -55,7 +55,7 @@ trait Crudable
      *
      * @throws AuthorizationException
      */
-    public function showResource(ModelInterface $id, FindActionInterface $findAction, array $includes = []): JsonResponse
+    public function showResource(string|ModelInterface $id, FindActionInterface $findAction, array $includes = []): JsonResponse
     {
         $findAction->authorize($id);
 
@@ -69,7 +69,7 @@ trait Crudable
      *
      * @throws AuthorizationException|UnvalidatedRequestException
      */
-    public function updateResource(Request $request, ModelInterface $id, UpdateActionInterface $updateAction): JsonResponse
+    public function updateResource(Request $request, string|ModelInterface $id, UpdateActionInterface $updateAction): JsonResponse
     {
         $updateAction->authorize($id);
 
@@ -85,7 +85,7 @@ trait Crudable
      *
      * @throws AuthorizationException|UnvalidatedRequestException
      */
-    public function patchResource(Request $request, ModelInterface $id, PatchActionInterface $patchAction): JsonResponse
+    public function patchResource(Request $request, string|ModelInterface $id, PatchActionInterface $patchAction): JsonResponse
     {
         $patchAction->authorize($id);
 
@@ -101,7 +101,7 @@ trait Crudable
      *
      * @throws AuthorizationException
      */
-    public function deleteResource(ModelInterface $id, DeleteActionInterface $deleteAction): JsonResponse
+    public function deleteResource(string|ModelInterface $id, DeleteActionInterface $deleteAction): JsonResponse
     {
         $deleteAction->authorize($id);
 

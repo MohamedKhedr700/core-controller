@@ -45,7 +45,7 @@ trait Crudable
 
         $paginate = $request->boolean('page', true) != 0;
 
-        $resources = $listAction->execute($filters, ['*'], $paginate);
+        $resources = $listAction->execute($filters, ['*'], [], $paginate);
 
         return $this->success('', $this->transformResources($resources, $includes));
     }

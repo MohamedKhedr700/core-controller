@@ -25,9 +25,7 @@ trait Crudable
     {
         $createAction->authorize();
 
-        $data = $request->passed();
-
-        $createAction->execute($data);
+        $createAction->execute($request->passed());
 
         return $this->success($this->getResponseMessage($createAction->action()));
     }
@@ -41,11 +39,11 @@ trait Crudable
     {
         $listAction->authorize();
 
-        $filters = $request->passed();
-
-        $paginate = $request->boolean('page', true) != 0;
-
-        $resources = $listAction->execute($filters, ['*'], [], $paginate);
+        $resources = $listAction->execute(
+            $request->passed(),
+            ['*'],
+            [],
+        );
 
         return $this->success('', $this->transformResources($resources, $includes));
     }
@@ -73,9 +71,7 @@ trait Crudable
     {
         $updateAction->authorize($id);
 
-        $data = $request->passed();
-
-        $updateAction->execute($id, $data);
+        $updateAction->execute($id, $request->passed());
 
         return $this->success($this->getResponseMessage($updateAction->action()));
     }
@@ -89,9 +85,7 @@ trait Crudable
     {
         $patchAction->authorize($id);
 
-        $data = $request->passed();
-
-        $patchAction->execute($id, $data);
+        $patchAction->execute($id, $request->passed());
 
         return $this->success($this->getResponseMessage($patchAction->action()));
     }
